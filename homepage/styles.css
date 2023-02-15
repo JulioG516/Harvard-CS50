@@ -1,0 +1,57 @@
+.center{
+    text-align: center;
+}
+.header{
+    color: #6D9886;
+    padding: 10px 0 10px 0;
+}
+body{
+    font-size: 1.7rem;
+    background-color: #F2E7D5;
+    color: #393E46;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.contrast{
+    color: #6D9886;
+}
+.list{
+    font-size: 1.4em;
+    color: #393E46;
+    list-style-type: none;
+    padding: 0;
+
+}
+.list li{
+    display: inline;
+    padding: 10px;
+
+}
+ul li a{
+    color: #6D9886;
+
+}
+.carousel{
+    border: 5px solid #6D9886;
+}
+.button{
+    color: white;
+    background-color: #393E46;
+    border-radius: 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.navbar-brand{
+    color: #393E46;
+}
+.navbar{
+    color: #6D9886;
+}
+footer{
+    color: white;
+    margin-top: auto;
+    text-align: center;
+    background-color: #6D9886;
+}

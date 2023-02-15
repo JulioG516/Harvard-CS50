@@ -1,0 +1,12 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It run fastest on a sorted list
+
+sort2 uses: Merge Sort
+
+How do you know?:In unsorted array they performed the quickiest, when i used it with random txts, was more fast than others
+and on sorted it was slow
+
+sort3 uses: Selection Sort
+
+How do you know?: Because it taked the same times on all tests, and was the only sort left

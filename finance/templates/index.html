@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">Symbol</th>
+            <th class="text-start">Name</th>
+            <th td class="text-end">Shares</th>
+            <th td class="text-end">Price</th>
+            <th td class="text-end">Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stocks %}
+        <tr>
+            <td class="text-start">{{stock.symbol}}</td>
+            <td class="text-start">{{stock.name}}</td>
+            <td class="text-end">{{stock.shares}}</td>
+            <td class="text-end">{{stock.price | usd}}</td>
+            <td class="text-end">{{ stock.total | usd }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+            <td class="border-0 text-end">{{cash[0]['cash'] | usd}}</td>
+        </tr>
+        <tr>
+            <td class="border-0 fw-bold text-end" colspan="4">Total</td>
+            <td class="border-0 text-end">{{ total | usd }}</td>
+        </tr>
+    </tfoot>
+</table>
+
+<h4>Manage your account:</h4>
+<br>
+<form action="/addCash">
+    <button class="btn  btn-success">Add Cash</button>
+</form>
+
+
+<form action="/changePassword">
+    <button class="btn btn-warning">Change my Password</button>
+</form>
+
+
+
+{% endblock %}

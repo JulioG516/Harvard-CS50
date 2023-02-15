@@ -1,0 +1,164 @@
+@font-face {
+    font-family: MonumentExtended;
+    src: url("fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+.navbar{
+    font-size: 1.5rem;
+}
+.primary{
+    background-color: #FFF4EB;
+}
+.secondary{
+    background-color: #FFFFFF;
+}
+.contrast{
+    color: #ca9277;
+}
+.btnContrast{
+    background-color: #ca9277;
+    color: #FFFFFF;
+    border-radius: 35px;
+    padding: 0 25px 0 25px;
+
+}
+.btnContrast:hover{
+    background-color: black;
+    color: #ca9277;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.logo{
+
+    font-family: 'MonumentExtended', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0.5em;
+}
+.startGreeting{
+    font-size: 3.5rem;
+}
+.btnContainer{
+    margin-top: 50px;
+    text-align: center;
+
+}
+.btnAbout{
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.about{
+    margin-top: 150px;
+}
+.form-border{
+    border: 1px solid black;
+}
+.btnCalculate{
+    font-size: 1.4rem;
+}
+.selectActivity{
+    font-size: 0.9rem;
+}
+.divResult{
+    margin-top: 30px;
+
+}
+.bmiGuide{
+    margin-top: 40px;
+}
+.logoAnchor{
+    color: black;
+    text-decoration: none;
+}
+.logoAnchor:hover{
+    color: black;
+    text-decoration: none;
+}
+.tableBF{
+    margin-top: 50px;
+}
+.card-header{
+    margin-top: 25px;
+    background-color: #ca9277;
+    color: white;
+}
+.card-body{
+    background-color: #FFF4EB;
+}
+.card-footer{
+    background-color: #FFF4EB;
+}
+.card-imageDiv{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0;
+}
+.card-imageDiv{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+.dotEnergy {
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dotProtein {
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dotFat{
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dotCarbs{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .card-body{
+    background-color: white;
+  }
+  .card{
+    min-width: 400px !important;
+    margin-top: 25px;
+  }
+  .card-heading{
+    background-color:#ca9277;
+    color: #FFF;
+  }
+  .card-subtitle{
+    color: #e5e5e5;
+
+  }
+  .searchBtn{
+    background-color: #ca9277;
+    color: #FFF;
+    border-radius: 15px;
+  }
+  footer{
+    margin-top: 40px;
+  }
+  .tableBF{
+    width: 100%;
+    border: 1px solid #ca9277;
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkFirst()
+            {
+
+                if (this.id == "ziggystardust")
+                {
+
+                    firstResult.innerHTML = "Correct!"
+                    document.getElementById(this.id).style.backgroundColor="green";
+                    document.getElementById(this.id).style.color="white";
+                }
+                else
+                {
+                    firstResult.innerHTML = "Incorrect"
+                    document.getElementById(this.id).style.backgroundColor="red";
+                    document.getElementById(this.id).style.color="white";
+                }
+
+
+            }
+
+
+            function checkSecond(){
+              let answer = document.getElementById('fanswer').value;
+              let secondResult = document.getElementById('secondResult');
+              if (answer.toLowerCase() == "boston")
+              {
+                document.getElementById("fanswer").style.backgroundColor="green";
+                document.getElementById("fanswer").style.color="white";
+                secondResult.innerHTML = "Correct!";
+              }
+              else
+              {
+                document.getElementById("fanswer").style.backgroundColor="red";
+                document.getElementById("fanswer").style.color="white";
+                secondResult.innerHTML = "Incorrect";
+              }
+    }
+
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>David Bowie</h1>
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What's the correctly David Bowie's Character Name ?</h3>
+                <h4 class="result" id="firstResult"></h4>
+
+                <button class="button" id="ziggystarburst">Ziggy Starburst</button>
+                <button class="button" id="ziggystardust">Ziggy Stardust</button>
+                <button class="button" id="ziggystarlust">Ziggy Starfrost</button>
+                <button class="button" id="ziggystarfrost">Ziggy Starlust</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What's Bowie's place of birth ? (City) </h3>
+                <h4  class="result" id="secondResult"></h4>
+                <input  required autocomplete="off" type="text" id="fanswer">
+                <button id="check">Check Answer</button>
+
+
+                <script>
+                    const b1 = document.getElementById("ziggystarburst");
+                    b1.addEventListener("click", checkFirst);
+
+                    const b2 = document.getElementById("ziggystardust");
+                    b2.addEventListener("click", checkFirst);
+
+                    const b3 = document.getElementById("ziggystarlust");
+                    b3.addEventListener("click", checkFirst);
+
+                    const b4 = document.getElementById("ziggystarfrost");
+                    b4.addEventListener("click", checkFirst);
+
+                    const elf = document.getElementById("check");
+                    elf.addEventListener("click", checkSecond);
+                </script>
+
+            </div>
+        </div>
+    </body>
+</html>

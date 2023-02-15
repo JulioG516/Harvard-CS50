@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Music</title>
+        <script>
+          function checkTrivia()
+          {
+
+             if (this.id == "borntodie")
+                {
+
+
+                    firstResult.innerHTML = "Correct!"
+                    document.getElementById(this.id).style.backgroundColor="green";
+                    document.getElementById(this.id).style.color="white";
+                }
+                else
+                {
+                    firstResult.innerHTML = "Incorrect"
+                    document.getElementById(this.id).style.backgroundColor="red";
+                    document.getElementById(this.id).style.color="white";
+                }
+              }
+
+              function checkSecond()
+              {
+              let answer = document.getElementById('fanswer1').value;
+              console.log(answer)
+              let secondResult = document.getElementById('secondResult');
+              if (answer.toLowerCase() == "david bowie")
+              {
+                document.getElementById("fanswer1").style.backgroundColor="green";
+                document.getElementById("fanswer1").style.color="white";
+                secondResult.innerHTML = "Correct!";
+              }
+              else
+              {
+                document.getElementById("fanswer1").style.backgroundColor="red";
+                document.getElementById("fanswer1").style.color="white";
+                secondResult.innerHTML = "Incorrect";
+              }
+              }
+
+              function checkThird()
+              {
+              let answer = document.getElementById('fanswer2').value;
+
+              let thirdResult = document.getElementById('thirdResult');
+              if (answer.toLowerCase() == "benny benassi")
+              {
+                document.getElementById("fanswer2").style.backgroundColor="green";
+                document.getElementById("fanswer2").style.color="white";
+                thirdResult.innerHTML = "Correct!";
+              }
+              else
+              {
+                document.getElementById("fanswer2").style.backgroundColor="red";
+                document.getElementById("fanswer2").style.color="white";
+                thirdResult.innerHTML = "Incorrect";
+              }
+
+              }
+
+        </script>
+
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-md">
+          <a class="navbar-brand" href="#">Music</a>
+          <a class="navbar" href="index.html">Home</a>
+          <a class="navbar" href="team.html">Team</a>
+          <a class="navbar" href="games.html">Games</a>
+        </div>
+      </nav>
+
+        <section class="secIntro">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                    <h1 class="center">My Music Page</h1>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="secAbout">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="header">My Favorite Genres and Artists</h3>
+                        <ul>
+                            <li>Dubstep
+                                <uL>
+                                   <li>Skrillex</li>
+                                   <li>Virtual Riot</li>
+                                   <li>Noisia</li>
+                                </uL>
+                              </li>
+                            <li>Classical Music
+                                <uL>
+                                    <li>JS. Bach</li>
+                                    <li>Richard Wagner</li>
+                                    <li>Tchaikovisky</li>
+                                </uL>
+                              </li>
+                            <li>Rock
+                                <ul>
+                                    <li>David Bowie</li>
+                                    <li>Johnny Cash</li>
+                                    <li>Radiohead</li>
+                                </ul>
+                              </li>
+                            <li>Others
+                                <ul>
+                                    <li>Lana Del Rey</li>
+                                    <li>Deadmau5</li>
+                                    <li>Dua Lipa</li>
+                                </ul>
+                              </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="center header">My Top 3 Artists</h3>
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://www.radiorock.com.br/wp-content/uploads/2022/09/lana-del-rey.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Lana Del Rey</h5>
+
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="
+                                http://s2.glbimg.com/PcTbBHzpoy7WNPWCmOMY-c91DqA=/620x400/e.glbimg.com/og/ed/f/original/2016/01/11/david-bowie-divulga.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>David Bowie</h5>
+
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://cdn.mos.cms.futurecdn.net/a6524fa68d8f73e9b8f962112bef17f5.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Skrillex</h5>
+
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section class="favoriteMusic">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="center header">My favorite musics by them</h3>
+                        <h4 class="center header">Lana Del Rey</h4>
+                            <div class="card-group">
+                                <div class="card">
+                                <img src="https://i3.ytimg.com/vi/cE6wxDqdOV0/maxresdefault.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=cE6wxDqdOV0" target="_blank">Video Games</a></h5>
+                                    <p class="card-text">From the album: Born to Die: The Paradise Edition.</p>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="https://i3.ytimg.com/vi/vBHild0PiTE/maxresdefault.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=vBHild0PiTE" target="_blank">Chemtrails Over the Country Club</a></h5>
+                                    <p class="card-text">From the album: Chemtrails Over the Country Club.</p>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="https://i3.ytimg.com/vi/DCYmJDO2_IE/maxresdefault.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://www.youtube.com/watch?v=DCYmJDO2_IE" target="_blank">Cinnamon Girl</a></h5>
+                                    <p class="card-text">From the album: Norman F#cking Rockwell!</p>
+                                </div>
+                                </div>
+                            </div>
+                        <h4 class="header center">David Bowie</h4>
+                        <div class="card-group">
+                            <div class="card">
+                              <img src="https://i3.ytimg.com/vi/iYYRH4apXDo/maxresdefault.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title"><a href="https://www.youtube.com/watch?v=iYYRH4apXDo" target="_blank">Space Oddity</a></h5>
+                                <p class="card-text">From the album: David Bowie.</p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="https://i3.ytimg.com/vi/7KEn0uOEILs/maxresdefault.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title"><a href="https://www.youtube.com/watch?v=7KEn0uOEILs" target="_blank">Ziggy Stardust</a></h5>
+                                <p class="card-text">From the album: Ziggy Stardust and the spiders from mars.</p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="https://i3.ytimg.com/vi/HyMm4rJemtI/maxresdefault.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title"><a href="https://www.youtube.com/watch?v=HyMm4rJemtI" target="_blank">Ashes to Ashes</a></h5>
+                                <p class="card-text">From the album:  Scary Monsters (and Super Creeps).</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <h4 class="header center">Skrillex</h4>
+                          <div class="card-group">
+                              <div class="card">
+                                <img src="https://i3.ytimg.com/vi/2dYFJdQf7rs/maxresdefault.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title"><a href="https://www.youtube.com/watch?v=2dYFJdQf7rs" target="_blank">Mumbai Power</a></h5>
+                                  <p class="card-text">From the album: Show Tracks.</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="https://i3.ytimg.com/vi/tH8SxBsRfqM/maxresdefault.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title"><a href="https://www.youtube.com/watch?v=tH8SxBsRfqM" target="_blank">Summit</a></h5>
+                                  <p class="card-text">From the album: Triple Vinyl Box Set.</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="https://i3.ytimg.com/vi/Ua0KpfJsxKo/maxresdefault.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title"><a href="https://i3.ytimg.com/vi/Ua0KpfJsxKo/maxresdefault.jpg" target="_blank">Cinema</a></h5>
+                                  <p class="card-text">Single Remix from Benny Benassi.</p>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trivia">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                    <h2 class="header center">Simple Trivia</h2>
+                    <h3 class="center">What's the Lana Del Rey correctly album name ?</h3>
+                    <h4 class="result" id="firstResult"></h4>
+
+                    <button class="button" id="borntolie">Born to Lie</button>
+                    <button class="button" id="borntodie">Born to Die</button>
+                    <button class="button" id="borntopie">Born to Pie</button>
+
+
+
+                    <h3 class="center">What's the Album name from song Space Oddity by David Bowie ?</h3>
+                    <h4  class="result" id="secondResult"></h4>
+                    <input  required autocomplete="off" type="text" id="fanswer1">
+                    <button id="check1">Check Answer</button>
+
+                    <h3 class="center">Cinema is an Skrillex remix by which artist?</h3>
+                    <h4  class="result" id="thirdResult"></h4>
+                    <input  required autocomplete="off" type="text" id="fanswer2">
+                    <button id="check2">Check Answer</button>
+
+                    <script>
+                      const b1 = document.getElementById("borntolie");
+                      b1.addEventListener("click", checkTrivia);
+
+                      const b2 = document.getElementById("borntodie");
+                      b2.addEventListener("click", checkTrivia);
+
+                      const b3 = document.getElementById("borntopie");
+                      b3.addEventListener("click", checkTrivia);
+
+                      const f1 = document.getElementById("check1");
+                      f1.addEventListener("click", checkSecond);
+
+                      const f2 = document.getElementById("check2");
+                      f2.addEventListener("click", checkThird);
+
+
+                    </script>
+
+n
+                </div>
+              </div>
+            </div>
+
+
+
+
+        </section>
+
+    </body>
+</html>
