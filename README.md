@@ -14,7 +14,12 @@ a program that calculates the minimum number of coins required to give a user ch
 ### Credit
 a program that determines whether a given credit card number is valid or not. The program prompts the user for a credit card number and then uses the Luhn algorithm to check if the number is valid or not. If the number is valid, the program also identifies the issuer of the credit card (e.g., Visa, Mastercard, etc.).
 
-# pset2 - Caesar and Readability
+# pset2 - Scrabble, Caesar and Readability 
+### Scrabble
+in Scrabble, players are presented with a set of letter tiles and a board with certain tile placement restrictions. The goal of the game is to create words on the board using the letter tiles, earning points based on the total point value of the tiles used and any bonus squares on the board.
+
+uses a dictionary file to check whether a word entered by the player is valid. It also assigns point values to each letter based on the Scrabble point system.
+
 ### Caesar
 a program that encrypts messages using Caesar's cipher. The program prompts the user for a message and a key, and then applies Caesar's cipher to the message using the key to shift the letters in the message by a certain number of positions
 
