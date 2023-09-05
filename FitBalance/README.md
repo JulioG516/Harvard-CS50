@@ -27,7 +27,7 @@ and an API to check for foods, which is the Edamam API.
 
 ## Project Explanation
 
-My project it's a web based application, the goal was to make a fitness and nutritition app, that can deliver useful informations, like an calculator to body fat, to body mass index, how many macronutrients and calories a person needs, and how many calories and macronutrients do you have in each food by using an API to get the serch.
+My project it's a web based application, the goal was to make a fitness and nutritition app, that can deliver useful informations, like an calculator to body fat, to body mass index, how many macronutrients and calories a person needs, and how many calories and macronutrients do you have in each food by using an API to get the search.
 
 
 ## Tools used and why
