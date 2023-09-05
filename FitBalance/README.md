@@ -31,8 +31,7 @@ My project it's a web based application, the goal was to make a fitness and nutr
 
 
 ## Tools used and why
-I used Flask to the back-end and handle the requests, but our main work was on JavaScript with calculations and formulas, i did not used Python and Flask to get the calculations, because we don't use any database on our server, its passed to the API and handled the JSONs with JavaScript, so if the user can "hack" by modifying our html, the site will just not work for them, but everything stay's in place.
-
+I used Flask to the back-end and handle the requests, but our main work was on JavaScript with calculations and formulas, i did not used Python and Flask to get the calculations, because we don't use any database on our server, its passed to the API and handled the JSONs with JavaScript.
 
 
 ## Each Page Description
